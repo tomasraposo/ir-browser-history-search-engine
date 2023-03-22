@@ -19,4 +19,4 @@ docker run \
       -it docker.elastic.co/elasticsearch/elasticsearch:8.6.2
 
 # follow container logs
-docker logs -f $(docker ps | awk NR==2 {print $1})
+docker logs -f $(docker ps | awk 'NR==2 {print $1}')
